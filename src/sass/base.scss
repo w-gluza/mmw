@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Source+Serif+Pro:400,700&subset=latin-ext");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
+  list-style: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Source Serif Pro", serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  // This define what 1rem is
+  // 10px/16pc = 62,5% --> 1rem = 10px;
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: $color-white;
+}
+
+// hides spinner arrows in input number
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+//button reset
+button {
+  cursor: pointer;
+  display: inline-block;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-image: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
